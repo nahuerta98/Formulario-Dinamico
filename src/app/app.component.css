@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*{box-sizing: border-box;}
+
+.white{ color: white;}
+.center{ text-align: center;}
+.bg-color{ background-color: #333; padding: 0.5rem;}
+.container{
+    margin-top: 1rem;
+}
+img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid rgba(51, 51, 51, 0.13);
+    border-radius: .2rem;
+
+    margin-bottom: 1rem;
+}
+.col{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn{
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+}
+
+.far, .fas{
+    color: white;
+}

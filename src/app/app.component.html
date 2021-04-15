@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="bg-color">
+    <h2 class="white center"> <i class="fas fa-box-open"></i> Devoluciones </h2>
+  </div>
+
+  <div class="container">
+
+    <form [formGroup]="formDevolucion">
+      <div formArrayName="Productos">
+
+        <div class="row" *ngFor="let detalles of Productos.controls; let i = index">
+          <div class="col">
+            <!-- Producto -->
+            <div class="form-group">
+              <label for="productos"> Producto </label>
+              <select class="form-select" id="producto" name="producto">
+                <option> Monitor </option>
+                <option> Mouse </option>
+                <option> Teclado </option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="col">
+            <!-- Cantidad -->
+            <div class="form-group">
+              <label> Cantidad </label>
+              <input type="number" class="form-control" name="cantidad">
+            </div>
+          </div>
+  
+          <div class="col">
+            <!-- Motivo -->
+            <div class="form-group">
+              <label> Motivo </label>
+             <input type="text" class="form-control" name="motivo">
+            </div>
+          </div>
+  
+          <div class="col">
+            <!-- Botón -->
+            <div class="d-grid gap-2">
+            <button class="btn btn-warning" (click)="borrar()"> <i class="fas fa-trash-restore"></i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <button class="btn btn-success" (click)="agregarDetalles()"> <i class="fas fa-plus-square"></i> </button>
+
+  </div>
+</div>
